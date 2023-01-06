@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./indexto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    <title>Todo list</title>
+
+    <style>
+
+#tour{
+            text-align: left;
+            font-size: 25px;
+
+            }
+
+            #log{
+            float: right;
+            }
+            .welcome{
+            text-align: center;
+            }
+            ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:auto;
+    background-color: rgb(223, 83, 48);
+}
+
+li{
+    float:left;
+}
+li a{       /*Set style for while hovering*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px  20px;
+    text-decoration:none;
+    font-size: large;
+    font-weight: bold;
+
+}
+li a:hover:not(.active){
+background-color: #dae636;
+color: white;
+}
+
+.footer{
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 0.5px;
+        
+        top: 2px;
+        bottom: 10px;
+
+}
+.about{
+    color:blueviolet;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.main2{
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 20px;
+    width: 33.33%;
+
+}
+body{
+    margin: 5;
+    
+}
+
+.main3{
+    box-shadow: #2015b4;
+    margin: 5px;
+}
+.main4::after, .main1::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.main4{
+    padding: 1 10px;
+    text-align: justify;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+.text{
+    color: red;
+}
+
+.switch{
+    border: #dae636;
+    outline: rgb(223, 83, 48);
+    padding: 10px;
+    color: black;
+    background-color: greenyellow;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.switch:hover {
+  background-color: rgb(17, 29, 197);
+}
+
+@media screen and (max-width: 660px) {
+  .main2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 id="tour">touristwithchathura.com</h1>
+    </div>
+   
+    
+    
+    <ul>
+        <li><a href="NavigationBar.html">Home</a></li>
+        <li><a  href ="aboutus.html" target=" ">About Us</a></li>
+        <li><a  href="contactus.html" target=" " >Contact Us</a></li>
+        
+        <li><a href ="indexto.html" target=" " >To-Do List</a></li>
+        
+        
+        <li id="log"><a href ="signup.html" target=" ">Sign up</a></li>
+    </ul>
+
+
+    <div id="app">
+
+        <h3>Add Todos</h3>
+        <div class="abc">
+            <input type="text" placeholder="Enter Task" :style="{'background-color':color}" v-model="task" @keyup.enter="addTask">
+            <button @click="addTask">Add Task<i class="fas fa-plus"></i></button>
+        </div>
+        <br><br><br><br>
+
+        <div id="pqr">
+            
+        <ul class="list">
+            <h3 id ="aa">Todo List</h3>
+            <li v-for="(t, index) in taskList" :key="index"> {{ t }} <i @click="removeTask(index)" class="fas fa-times"></i></li>
+
+        </ul>
+        </div>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="./indexto.js"></script>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div class="footer" id ="footer">
+        <p>Powered by A.H.C.Hasanga<br>All Right Reserved!</p>
+        </div>
+</body>
+</html>

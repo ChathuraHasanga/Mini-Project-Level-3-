@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta name="range" content="width=device-width, initial-scale=1">
+        <style>
+            #tour{
+            text-align: left;
+            font-size: 25px;
+
+            }
+            
+            #log{
+            float: right;
+            }
+            .welcome{
+            text-align: center;
+            }
+            ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:auto;
+    background-color: rgb(223, 83, 48);
+}
+
+li{
+    float:left;
+}
+li a{       /*Set style for while hovering*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px  20px;
+    text-decoration:none;
+    font-size: large;
+    font-weight: bold;
+
+}
+li a:hover:not(.active){
+background-color: #dae636;
+color: white;
+}
+
+.footer{
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 0.5px;
+        
+        top: 2px;
+        bottom: 10px;
+
+}
+.about{
+    color:blueviolet;
+    background-color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.main2{
+    padding: 0 10px;
+    float: left;
+    margin-bottom: 20px;
+    width: 33.33%;
+
+}
+body{
+    margin: 5;
+    background-color: #ffffff;
+}
+
+.main3{
+    box-shadow: #2015b4;
+    margin: 5px;
+}
+.main4::after, .main1::after{
+    display: table;
+    content: "";
+    clear: both;
+}
+.main4{
+    padding: 1 10px;
+    text-align: justify;
+}
+html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+.text{
+    color: red;
+}
+
+.switch{
+    border: #dae636;
+    outline: rgb(223, 83, 48);
+    padding: 10px;
+    color: black;
+    background-color: greenyellow;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.switch:hover {
+  background-color: rgb(17, 29, 197);
+}
+
+@media screen and (max-width: 660px) {
+  .main2 {
+    width: 100%;
+    display: block;
+  }
+}
+  
+</style>
+    
+    </head>
+
+    <body>
+        <div>
+            <h1 id="tour">touristwithchathura.com</h1>
+        </div>
+       
+        
+        
+        <ul>
+            <li><a href="NavigationBar.html">Home</a></li>
+            <li><a  href ="aboutus.html" target=" ">About Us</a></li>
+            <li><a  href="contactus.html" target=" " >Contact Us</a></li>
+            
+            <li><a href ="indexto.html" target=" " >To-Do List</a></li>
+            
+            
+            <li id="log"><a href ="signup.html" target=" ">Sign up</a></li>
+        </ul>
+    
+        
+        <div class ="about">
+            <h1>ABOUT US</h1>
+            <p>We are an institution set up to track the whereabouts of foreigners visiting Sri Lanka and their needs.
+                 We have deployed our agents in almost every part of Sri Lanka to track tourists visiting different parts of Sri Lanka.
+                  They provide us with tourist information daily.
+                   According to that information, our role is to compile statistics on the countries visited by tourists, their destinations, their activities in the country, and their needs.
+                    We have a large staff for that. The fact that some of the biggest people in the world are associated with our organization is a great investment in our work.</p>
+            
+
+        </div>
+
+        <h2 style ="text-align: center">Our Staff</h2>
+        <div class="main1">
+            <div class="main2">
+                <div class="main3">
+                    <img src="chathura.jpg" alt ="chathura" style="width: 100%">
+                    <div class ="main4">
+                        <h2>Chathura Hasanga</h2>
+                        <p class="text"> Owner</p>
+                        <p>Chathura Hasanga is an Undergraduate student, investor, and philanthropist. 
+                            He is the co-founder and former director of the Hard Man World.com website.
+                             In addition, he co-founded king store, a photo gallery.
+                              He is a strong proponent of an open and market-driven economy. 
+                            He is the owner of our institute.</p>
+                            <br><br>
+                        <p>Hotline:0112369369</p>
+                        <p>chasanga074@gmail.com</p>
+                        
+                        <p><button class="switch">Contact</button></p>
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="main2">
+            <div class="main3">
+                <img src="elonmusk1.jpg" alt ="isuru" style="width:100%">
+                <div class="main4">
+                    <h2>Elon Musk</h2>
+                    <p class="text">Director</p>
+                    <p>Elon Reeve Musk is an entrepreneur and business magnate.
+                         He is the founder, CEO, and Chief Engineer at SpaceX; early-stage investor, CEO, and Product Architect of Tesla, Inc.; founder of The Boring Company; and co-founder of Neuralink and OpenAI. With an estimated net worth of around US$270 billion as of December 2021, Musk is the wealthiest person in the world.
+                         He is the Director of our institute.</p>
+                         <br>
+                    <p>Hotline:0112258258</p>
+                    <p>elonmusk34@gmail.com</p>
+                    <p><button class="switch">Contact</button></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main2">
+            <div class="main3">
+                <img src="jackma1.jpg" alt="jackma" style="width: 100%">
+                <div class="main4">
+                    <h2>Jack Ma</h2>
+                    <p class="text">Manager</p>
+                    <p>Jack Ma Yun is a Chinese business magnate, investor, and philanthropist.
+                         He is the co-founder and former executive chairman of Alibaba Group, a multinational technology conglomerate.
+                          In addition, he co-founded Yunfeng Capital, a private equity firm. Ma is a strong proponent of an open and market-driven economy.
+                         He is a Manager of our institute.</p>
+                         <br><br>
+                    <p>Hotline:0112471471</p>
+                    <p>jackma98@gmail.com</p>
+                    
+                    <p><button class="switch">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <br><br>
+    
+    
+        <div class="footer" id ="footer">
+            <p>Powered by A.H.C.Hasanga<br>All Right Reserved!</p>
+            </div>
+    </body>
+
+</html>

@@ -1,0 +1,120 @@
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:auto;
+    background-color: rgb(223, 83, 48);
+}
+
+li{
+    float:left;
+}
+li a{       /*Set style for while hovering*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px  20px;
+    text-decoration:none;
+    font-size: large;
+    font-weight: bold;
+
+}
+
+
+/*set style for list item which is not active*/
+li a:hover:not(.active){
+background-color: #dae636;
+color: white;
+}
+
+#tour{
+text-align: left;
+font-size: 25px;
+
+}
+
+#log{
+float: right;
+}
+
+.footer{
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 0.5px;
+        height: 100px;
+        top: 10px;
+        bottom: 5px;
+        margin-bottom: 5px;
+        
+    }      
+
+
+        
+        
+
+.welcome{
+text-align: center;
+}
+
+
+div.photos{
+margin-left:  10px;
+margin-right:  8px;
+margin-bottom: 10px;
+margin-top: 5px;
+border: 1px solid #dae636;
+width: 280px;
+float:left;
+
+}
+
+
+div.photos:hover{
+border: 1px solid #e6ebec;
+
+}
+
+div.photos img{
+width: 100%;
+height: 300px;
+
+}
+
+div.esse{
+padding: 18px;
+text-align: center;
+background-color: rgb(133, 201, 77);
+}
+
+.all{
+    float: none;
+    display: block;
+    position:relative;
+}
+
+body{
+    min-height: 100vh;
+    background-color: rgb(224, 231, 182);
+}
+#pearl{
+    text-align: center;
+    font-size: 50px;
+    color:red;
+}
+#gif{
+    
+    width: 100%;
+}
+
+#well{
+    width: 100%;
+    height: 70px;
+}
+
+button{
+    background-color: purple;
+    color: white;
+    
+}

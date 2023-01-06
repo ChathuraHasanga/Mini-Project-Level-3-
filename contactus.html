@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contact Us Page</title>
+        
+        <style>
+            #tour{
+            text-align: left;
+            font-size: 25px;
+
+            }
+            
+            #log{
+            float: right;
+            }
+            .welcome{
+            text-align: center;
+            }
+            ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:auto;
+    background-color: rgb(223, 83, 48);
+}
+
+li{
+    float:left;
+}
+li a{       /*Set style for while hovering*/
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px  20px;
+    text-decoration:none;
+    font-size: large;
+    font-weight: bold;
+
+}
+li a:hover:not(.active){
+background-color: #dae636;
+color: white;
+}
+
+.footer{
+        background-color: #0099cc;
+        color: #ffffff;
+        text-align: center;
+        font-size: 20px;
+        padding: 0.5px;
+        
+        top: 2px;
+        bottom: 10px;
+
+}
+.contain{
+    width: 80%;
+    margin: 60px auto;
+}
+body{
+    background-color: aquamarine;
+    font-size: 16px;
+}
+.box{
+    background-color: white;
+    display: flex;
+}
+.box-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+}
+.box-right{
+    flex-basis:40%;
+    padding: 40px ;
+    background-color: #150c6b;
+    color: white;
+}
+
+#contact{
+    margin-bottom: 20px;
+
+}
+.contain p{
+    margin-bottom: 30px;
+    
+}
+.input-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group{
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 5px rgb(18, 8, 107);
+    outline:none;
+    padding-bottom: 5px;
+
+}
+textarea{
+    width: 100%;
+    border: 1px solid;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+label{
+    color: #e636c0;
+    margin-bottom: 6px;
+    display: block;
+}
+button{
+    background-color: #086114;
+    color: #ffffff;
+    width: 100px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    height: 30px;
+    box-shadow: #cc4100;
+}
+.box-left h3{
+    color: #150c6b;
+    margin-bottom:30px;
+    font-weight: 600;
+}
+
+.box-right h3{
+    
+    margin-bottom:30px;
+    font-weight: 600;
+}
+
+tr td:first-child{
+    padding-right: 20px;
+}
+
+tr td{
+    padding-top: 20px;
+}
+
+        </style>
+
+    </head>
+
+    <body>
+        <div>
+            <h1 id="tour">touristwithchathura.com</h1>
+        </div>
+       
+        
+        
+        <ul>
+            <li><a href="NavigationBar.html">Home</a></li>
+            <li><a  href ="aboutus.html" target=" ">About Us</a></li>
+            <li><a  href="contactus.html" target=" " >Contact Us</a></li>
+            
+            <li><a href ="indexto.html" target=" " >To-Do List</a></li>
+            
+            
+            <li id="log"><a href ="#Sign up"  >Sign up</a></li>
+        </ul>
+    
+        
+       <div class="contain">
+           <h2 id ="contact">Contact Us</h2>
+           <p>We would want to respond your tourist problems and help you succeed.<br>
+               Feel free to get in touch with us.</p>
+               <div class="box">
+                   <div class="box-left">
+                    <h3>Send your request</h3>
+                    <form>
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Enter name">
+                            </div>
+                           
+                            
+                            <div class="input-group">
+                                <label>Phone</label>
+                                <input type="text" placeholder="+94 111111111">
+                            </div>
+                            </div>
+                            <div class="input-row">
+                            <div class="input-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="example@gmail.com">
+                            </div>
+                            <div class="input-group">
+                                <label>Subject</label>
+                                <input type="text" placeholder="Enter Subject">
+                            </div>
+                        </div>
+
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Enter your message"></textarea>
+                        <button type="submit">SEND</button>
+                    </form>
+                   </div>
+                   <div class="box-right">
+                    <h3>Reach us</h3>
+                    <table>
+                        <tr>
+                            <td>Email</td>
+                            <td>chasanga074@gmail.com</td>
+                        </tr>
+                        <tr>
+                            <td>Phone</td>
+                            <td>0763384571</td>
+                        </tr>
+                        <tr>
+                            <td>Address</td>
+                            <td>No.344,<br>Morayaya South,<br>Wekandhawela.</td>
+                        </tr>
+                    </table>
+                   </div>
+               </div>
+       </div>
+
+        <div class="footer" id ="footer">
+            <p>Powered by A.H.C.Hasanga<br>All Right Reserved!</p>
+            </div>
+    </body>
+</html>
